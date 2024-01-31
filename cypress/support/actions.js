@@ -141,8 +141,6 @@ export const actions = {
         cy.get(selectors.phoneInCart.productName).contains('Samsung galaxy s6').should('be.visible');
         cy.get(selectors.laptopInCart.productName).contains('Sony vaio i5').should('be.visible');
     },
-
-    //daca nu merge poti sa o stergi. e in locul celei de jos
     typeWithRetry: function (selector, text, retries = 3) {
         let attempts = 0;
         const typeInField = () => {
